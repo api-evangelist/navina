@@ -64,5 +64,40 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Navina is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://www.nasdaqprivatemarket.com/
+Navina is a healthcare AI company whose clinician-facing copilot supports value-based care.
+It ingests data from electronic health records, health information exchanges, insurance claims
+and care-gap files, then reconciles it into a single "Patient Portrait" that surfaces
+risk-adjustment (HCC/RAF) insights, quality and care-gap management, ambient clinical
+documentation and network analytics at the point of care. Navina is sold to physician groups,
+health systems, ACOs/MSOs and health plans.
+
+- Website: https://www.navina.ai/
+- Status: https://status.navina.ai/
+- Trust Center: https://trust.navina.ai/
+- GitHub: https://github.com/Navina-ai
+
+## API surface
+
+**Navina publishes no public API.** It is a consumer of EHR interoperability APIs rather than a
+publisher of one: the product is delivered as an EHR-embedded application integrated with Epic,
+Veradigm/Altera, athenahealth, eClinicalWorks and Cerner over HL7 v2/v3, FHIR and SMART on
+FHIR/OAuth2. There is no developer portal, documentation, API reference, SDK, or machine-readable
+contract on any Navina host. `api.navina.ai` resolves to an AWS API Gateway that answers every
+path with HTTP 403 `{"message":"Missing Authentication Token"}`, and `docs.navina.ai` is a private
+S3 bucket returning HTTP 403 `AccessDenied`.
+
+What Navina *does* publish, and what this profile captured:
+
+| Artifact | What was found |
+|---|---|
+| `llms/navina-llms.txt` | A real, provider-authored `llms.txt` (36 KB, last updated 2026-08-04) served at https://www.navina.ai/llms.txt |
+| `conformance/` | ISO/IEC 27001:2022 (4th consecutive year), SOC 2 Type II, HIPAA — each from Navina's own dated announcement |
+| `security/navina-trust-center.yml` | Public trust center at trust.navina.ai, powered by Anecdotes |
+| `security/navina-domain-security.yml` | TLS 1.3, HSTS (max-age 31536000), SPF and DMARC (`p=quarantine`) present; DNSSEC and CAA absent |
+| `lifecycle/` | UptimeRobot-hosted status page; no deprecation policy, versioning scheme or changelog |
+| `plans/` | No published pricing at all — `/pricing` returns 404; enterprise contact-sales only |
+| `well-known/` | Every `/.well-known/` path probed on five hosts missed |
+
+No OpenAPI, AsyncAPI, GraphQL SDL, MCP server, A2A agent card, SDK or Postman collection exists to
+capture. The `Navina-ai` GitHub organization holds 14 public repositories, 13 of which are forks of
+third-party projects; none is a client library for a Navina API.

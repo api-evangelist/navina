@@ -1,0 +1,47 @@
+generated: '2026-08-26'
+method: searched
+source: https://www.navina.ai/ ; https://www.navina.ai/demo ; https://www.navina.ai/pricing
+note: >-
+  Navina publishes no pricing whatsoever. There is no pricing page, no plan
+  tiers, no per-seat or per-member rate card, and no published quota or overage
+  terms. https://www.navina.ai/pricing returns HTTP 404, and the sitemap
+  (255 URLs) contains no pricing path. The entire commercial motion is a
+  "Request a Demo" contact form routed to sales, which is the expected shape for
+  an enterprise healthcare AI product sold to physician groups, health systems,
+  ACOs/MSOs and health plans under negotiated contracts. This is an honest zero,
+  not an unchecked field.
+
+plan_count: 0
+plans: []
+
+commercial_model:
+  type: enterprise-contact-sales
+  self_serve_signup: false
+  public_price_list: false
+  free_tier: false
+  trial: not published
+  entry_point:
+    name: Request a Demo
+    url: https://www.navina.ai/demo
+    http_status: 200
+  contracting:
+    general_terms:
+      url: https://www.navina.ai/legal/general-terms-conditions
+      http_status: 200
+    product_terms:
+      url: https://www.navina.ai/legal/clinician-copilot-product-terms
+      http_status: 200
+    advisory_services_terms:
+      url: https://www.navina.ai/legal/advisory-services-terms
+      http_status: 200
+
+evidence:
+- url: https://www.navina.ai/pricing
+  status: 404
+  finding: No pricing page exists.
+- url: https://www.navina.ai/demo
+  status: 200
+  finding: Demo request form is the only published route to a commercial conversation.
+- url: https://www.navina.ai/sitemap.xml
+  status: 200
+  finding: 255 URLs, none of them a pricing, plans or billing page.

@@ -1,0 +1,99 @@
+generated: '2026-08-26'
+method: probed
+source: live HTTP probes of every Navina host discovered during enrichment
+note: >-
+  Every /.well-known/ path probed returned a miss. No WellKnown or SecurityTxt
+  pointer is emitted in apis.yml, because none of these hosts serves a real
+  document. Two hosts are catch-all false positives and are recorded as misses
+  on purpose: trust.navina.ai is an Angular single-page app (Anecdotes trust
+  center) that answers HTTP 200 with the same HTML shell for every /.well-known/*
+  path, and app.navina.ai is an S3/CloudFront-fronted single-page app. The
+  www.navina.ai host returns a distinctive "Invalid .well-known request" 404 body
+  from Webflow, and api.navina.ai is an AWS API Gateway that answers every
+  unmatched route with HTTP 403 {"message":"Missing Authentication Token"}.
+hosts:
+- host: www.navina.ai
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+- host: api.navina.ai
+  documents:
+  - path: /.well-known/security.txt
+    status: 403
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 403
+    file: null
+  - path: /.well-known/api-catalog
+    status: 403
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 403
+    file: null
+  - path: /.well-known/agent.json
+    status: 403
+    file: null
+- host: app.navina.ai
+  documents:
+  - path: /.well-known/security.txt
+    status: 403
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 200
+    file: null
+    note: >-
+      Not a document. HTML single-page-app shell, not JSON; the host answers 200
+      with the same shell for arbitrary paths. Treated as a miss.
+  - path: /.well-known/api-catalog
+    status: 200
+    file: null
+    note: Not a document. Same SPA catch-all shell. Treated as a miss.
+  - path: /.well-known/agent-card.json
+    status: 403
+    file: null
+- host: trust.navina.ai
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    file: null
+    note: >-
+      Not a document. Angular SPA catch-all returns the trust-center HTML shell
+      for every path, including nonsense ones. Treated as a miss.
+  - path: /.well-known/agent-card.json
+    status: 200
+    file: null
+    note: Not a document. Same SPA catch-all shell. Treated as a miss.
+  - path: /.well-known/agent.json
+    status: 200
+    file: null
+    note: Not a document. Same SPA catch-all shell. Treated as a miss.
+- host: status.navina.ai
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null

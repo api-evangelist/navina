@@ -1,0 +1,56 @@
+generated: '2026-08-26'
+method: searched
+source: https://status.navina.ai/ ; https://www.navina.ai/legal/general-terms-conditions
+note: >-
+  Navina publishes no public API, so there is no API versioning scheme,
+  deprecation policy, sunset-header practice or changelog to record. The only
+  lifecycle surface Navina publishes is an operational status page. Everything
+  below is either observed or explicitly recorded as absent.
+
+status_page:
+  present: true
+  url: https://status.navina.ai/
+  http_status: 200
+  provider: UptimeRobot (hosted public status page)
+  subscribe: >-
+    Email subscription and unsubscribe flow offered on the page. Monitor list and
+    uptime history are loaded client-side via JavaScript and are not present in
+    the served HTML.
+  incident_history_visible: >-
+    "There are no updates in the last 7 days" at time of probe; a status update
+    history and 24h/7d/30d/90d uptime view are offered.
+
+deprecation_policy:
+  present: false
+  sunset_header: false
+  deprecation_header: false
+  rfc8594: false
+  note: >-
+    No deprecation or sunset policy is published. There is no public API surface
+    for one to apply to.
+
+versioning:
+  scheme: null
+  current_version: null
+  note: >-
+    No public API and no published API version. The customer application at
+    app.navina.ai and the gated backend at api.navina.ai carry no public version
+    documentation.
+
+changelog:
+  present: false
+  url: null
+  note: >-
+    No dated product or API changelog is published. Navina posts company and
+    product announcements as news articles at https://www.navina.ai/news, which
+    are dated but are press releases rather than a release-notes stream, so no
+    ChangeLog pointer is emitted.
+
+sla:
+  published: false
+  note: >-
+    No public SLA. Service commitments are handled in the General Terms &
+    Conditions and in customer contracts rather than on a public uptime-guarantee
+    page. https://www.navina.ai/legal/general-terms-conditions (HTTP 200)
+
+deprecated_operations: []

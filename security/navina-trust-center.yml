@@ -1,0 +1,48 @@
+generated: '2026-08-26'
+method: searched
+source: https://trust.navina.ai/
+note: >-
+  Navina operates a public trust center. It is an Angular single-page app served
+  by Anecdotes, so the certification list is rendered client-side and is not
+  present in the served HTML — the certifications recorded here therefore come
+  from Navina's own dated announcement pages rather than from scraping the trust
+  center body. The automated probe (probe-security-programs.py) reported
+  trust=none for exactly this reason: it keyword-matches the response body and
+  the body is an empty app shell. This file corrects that miss by hand, with
+  evidence.
+
+trust_center:
+  present: true
+  url: https://trust.navina.ai/
+  http_status: 200
+  platform: Anecdotes
+  platform_evidence: 'og:title meta tag reads "Trust Center | Powered by Anecdotes"'
+  rendering: >-
+    Client-side Angular. HTML shell is 92,685 bytes and contains no certification
+    names; the app bundle at /apps/trustcenter/main.*.js exposes no anonymous
+    data endpoint that could be read without executing the app.
+
+certifications:
+- name: ISO/IEC 27001:2022
+  status: certified
+  detail: Fourth consecutive year of certification, under the 2022 revision.
+  source: https://www.navina.ai/news/navina-achieves-iso-27001-certification-again
+  published: '2024-04-11'
+- name: SOC 2 Type II
+  status: audited
+  detail: >-
+    Security, availability and confidentiality criteria; "no deviation on all
+    controls". Auditor described only as a Big Four firm.
+  source: https://www.navina.ai/news/successful-soc-2-type-ii-hipaa-audit
+  published: '2024-03-14'
+- name: HIPAA
+  status: audited
+  detail: HIPAA audit completed alongside the SOC 2 Type II engagement.
+  source: https://www.navina.ai/news/successful-soc-2-type-ii-hipaa-audit
+  published: '2024-03-14'
+
+document_access:
+  self_serve: unknown
+  note: >-
+    Whether audit reports are downloadable, NDA-gated, or request-only could not
+    be determined without executing the client-side app. Not asserted either way.

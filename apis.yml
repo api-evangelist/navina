@@ -1,17 +1,35 @@
 aid: navina
 name: Navina
-description: 'Navina is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: 'Navina is a healthcare AI company whose clinician-facing copilot supports
+  value-based care. It ingests data from electronic health records, health information
+  exchanges, insurance claims and care-gap files, then reconciles it into a single
+  "Patient Portrait" that surfaces risk-adjustment (HCC/RAF) insights, quality and
+  care-gap management, ambient clinical documentation and network analytics at the
+  point of care. Navina is delivered as an EHR-embedded application — integrated with
+  Epic, Veradigm/Altera, athenahealth, eClinicalWorks and Cerner via HL7 v2/v3, FHIR
+  and SMART on FHIR/OAuth2 — and is sold to physician groups, health systems, ACOs/MSOs
+  and health plans. It is a consumer of EHR interoperability APIs rather than a publisher
+  of a public developer API: no developer portal, documentation, API reference or
+  machine-readable contract is published, and the api.navina.ai host is a fully
+  authenticated backend.'
 url: https://raw.githubusercontent.com/api-evangelist/navina/refs/heads/main/apis.yml
+image: https://cdn.prod.website-files.com/65df77bb47a7104730575520/65df7e15c4b06e32101057f8_navina_webclip.png
 x-type: company
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
 specificationVersion: '0.20'
 created: '2026-08-26'
 modified: '2026-08-26'
 tags:
 - Company
+- Healthcare
+- Artificial Intelligence
+- Clinical Decision Support
+- Value-Based Care
+- Risk Adjustment
+- Electronic Health Records
+- FHIR
+- Interoperability
+- Medical Coding
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +37,57 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/navina-domain-security.yml
 - type: Website
-  url: https://www.nasdaqprivatemarket.com/
+  url: https://www.navina.ai/
+- type: Blog
+  url: https://www.navina.ai/articles
+- type: HelpCenter
+  url: https://www.navina.ai/faq
+- type: PrivacyPolicy
+  url: https://www.navina.ai/legal/privacy-policy
+- type: TermsOfService
+  url: https://www.navina.ai/legal/general-terms-conditions
+- type: GitHubOrganization
+  url: https://github.com/Navina-ai
+- type: Login
+  url: https://app.navina.ai/
+- type: StatusPage
+  url: https://status.navina.ai/
+- type: TrustCenter
+  url: https://trust.navina.ai/
+- type: Compliance
+  url: conformance/navina-conformance.yml
+- type: Conformance
+  url: conformance/navina-conformance.yml
+- type: Lifecycle
+  url: lifecycle/navina-lifecycle.yml
+- type: LLMsTxt
+  url: llms/navina-llms.txt
+- type: Plans
+  url: plans/navina-plans-pricing.yml
+x-enrichment:
+  date: '2026-08-26'
+  status: minimal
+  artifacts_added: 8
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: >-
+    Navina ships an EHR-embedded clinical AI product and consumes EHR FHIR/HL7
+    APIs rather than publishing one — its 255-URL sitemap contains no developer,
+    docs or API page, and api.navina.ai is an AWS API Gateway that answers every
+    path, including /openapi.json and /mcp, with HTTP 403 "Missing Authentication
+    Token".
+  evidence:
+  - url: https://www.navina.ai/sitemap.xml
+    status: 200
+  - url: https://api.navina.ai/openapi.json
+    status: 403
+  - url: https://www.navina.ai/openapi.json
+    status: 404
+  - url: https://docs.navina.ai/
+    status: 403
+  checked: '2026-08-26'

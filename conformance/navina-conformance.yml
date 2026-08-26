@@ -1,0 +1,130 @@
+generated: '2026-08-26'
+method: searched
+source: >-
+  https://www.navina.ai/news/navina-achieves-iso-27001-certification-again ;
+  https://www.navina.ai/news/successful-soc-2-type-ii-hipaa-audit ;
+  https://trust.navina.ai/
+note: >-
+  Navina publishes no machine-readable API contract, so nothing here is derived
+  from a spec. Every entry below is a compliance or interoperability claim made
+  by Navina on its own public pages, with the exact page recorded as evidence.
+  The healthcare interoperability standards are recorded as CONSUMED, not
+  published: Navina is a client of EHR FHIR/HL7 endpoints (Epic, Veradigm/Altera,
+  athenahealth, eClinicalWorks, Cerner), not an operator of one, and no public
+  FHIR capability statement is served on any Navina host.
+
+conformance:
+- id: iso-27001
+  conforms: true
+  evidence:
+    claim: >-
+      "Navina has successfully completed its ISO 27001 audit for 2024, achieving
+      certification under the latest and most stringent revision of the standard:
+      ISO/IEC 27001:2022." Announced as the fourth consecutive year of
+      certification.
+    standard: ISO/IEC 27001:2022
+    url: https://www.navina.ai/news/navina-achieves-iso-27001-certification-again
+    published: '2024-04-11'
+    certifying_body: not named in the announcement
+- id: soc2-type-ii
+  conforms: true
+  evidence:
+    claim: >-
+      SOC 2 Type II audit completed "in good standing", evaluating controls and
+      processes for security, availability and confidentiality against AICPA
+      criteria, with "no deviation on all controls". Auditor described only as a
+      Big Four firm; not named.
+    standard: AICPA SOC 2 Type II
+    trust_services_criteria: [security, availability, confidentiality]
+    url: https://www.navina.ai/news/successful-soc-2-type-ii-hipaa-audit
+    published: '2024-03-14'
+- id: hipaa
+  conforms: true
+  evidence:
+    claim: >-
+      HIPAA audit completed alongside the SOC 2 Type II engagement. Navina
+      handles protected health information ingested from EHRs, HIEs and claims
+      files on behalf of provider and payer customers.
+    standard: HIPAA (US 45 CFR Parts 160/164)
+    url: https://www.navina.ai/news/successful-soc-2-type-ii-hipaa-audit
+    published: '2024-03-14'
+- id: trust-center
+  conforms: true
+  evidence:
+    claim: >-
+      Navina operates a public trust center at trust.navina.ai (powered by
+      Anecdotes) as the front door for its security and compliance posture.
+    url: https://trust.navina.ai/
+    http_status: 200
+
+domain_standards:
+- id: hl7-fhir
+  conforms: consumed
+  role: client
+  evidence:
+    claim: >-
+      "Navina for Veradigm enables Navina to ingest data from Veradigm via FHIR",
+      compatible with Veradigm EHR (formerly Professional EHR), Sunrise and
+      TouchWorks EHR. Navina's own implementation-engineering roles specify FHIR
+      API enablement and SMART on FHIR/OAuth2 setup against Epic.
+    url: https://www.navina.ai/core-technology
+    caveat: >-
+      Navina consumes EHR FHIR APIs; it does not publish a FHIR server. No
+      /metadata CapabilityStatement is served on any Navina host — api.navina.ai
+      returns HTTP 403 "Missing Authentication Token" for /fhir/metadata and
+      /metadata alike.
+- id: hl7-v2-v3
+  conforms: consumed
+  role: client
+  evidence:
+    claim: >-
+      Integration surface documented by Navina as HL7 v2/v3 plus Interconnect VPN
+      alongside FHIR, used to ingest EHR data for the Patient Portrait.
+    url: https://www.navina.ai/core-technology
+- id: smart-on-fhir
+  conforms: consumed
+  role: client
+  evidence:
+    claim: >-
+      Navina is delivered as an EHR-embedded application launched inside Epic and
+      other EHRs, using SMART on FHIR/OAuth2 app launch and configuration.
+    url: https://www.navina.ai/news/navina-ai-now-integrated-with-epic
+- id: cms-hcc-risk-adjustment
+  conforms: consumed
+  role: implementer
+  evidence:
+    claim: >-
+      Navina's risk-adjustment product computes CMS HCC / RAF scores. Navina's
+      public GitHub org carries raf-calc-hccpy, a fork of yubin-park/hccpy (a
+      Python implementation of CMS Hierarchical Condition Categories).
+    url: https://github.com/Navina-ai/raf-calc-hccpy
+- id: hedis-stars
+  conforms: consumed
+  role: implementer
+  evidence:
+    claim: >-
+      Quality Management product targets HEDIS measures and Medicare Stars
+      performance, closing care gaps against those measure sets.
+    url: https://www.navina.ai/products/quality-management
+
+api_standards:
+- id: openapi
+  conforms: false
+  evidence: >-
+    No OpenAPI or Swagger document is served on any Navina host. Probed
+    /openapi.json, /openapi.yaml, /swagger.json, /v1/openapi.json, /api-docs,
+    /docs and /redoc against www.navina.ai, navina.ai, api.navina.ai,
+    app.navina.ai and docs.navina.ai — all 403 or 404, or an SPA HTML shell.
+- id: mcp
+  conforms: false
+  evidence: >-
+    No Model Context Protocol server found. A tools/list JSON-RPC POST to
+    https://api.navina.ai/mcp returned HTTP 403 {"message":"Missing
+    Authentication Token"} — the AWS API Gateway default for an unmatched route,
+    not an MCP auth challenge. mcp.navina.ai does not resolve.
+- id: a2a-agent-card
+  conforms: false
+  evidence: >-
+    No A2A Agent Card. /.well-known/agent-card.json and /.well-known/agent.json
+    probed on all five hosts; every response was a 403, a 404, or an SPA HTML
+    shell that is not a JSON AgentCard object.

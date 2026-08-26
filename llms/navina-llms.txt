@@ -1,0 +1,291 @@
+﻿# llms.txt for https://www.navina.ai/
+> Navina is the clinician-first AI copilot for value-based care. It ingests EHR, HIE, and claims data to build a complete patient picture at the point of care, powering risk adjustment, quality/care-gap management, ambient documentation, and analytics for physician groups, ACOs/MSOs, and health plans.
+# Purpose: Guide AI language models to understand public content while blocking private areas
+
+
+# Last updated: 2026-08-04
+
+
+User-agent: * Allow: /
+# Popular AI / LLM bots — explicitly allowed
+User-agent: GPTBot Allow: /
+User-agent: CCBot Allow: /
+User-agent: ChatGPT-User Allow: /
+User-agent: ClaudeBot Allow: /
+User-agent: anthropic-ai Allow: /
+User-agent: Google-Extended Allow: /
+User-agent: Bard Allow: /
+User-agent: Gemini Allow: /
+User-agent: PerplexityBot Allow: /
+User-agent: Applebot-Extended Allow: /
+User-agent: FacebookBot Allow: /
+User-agent: DuckAssistBot Allow: /
+User-agent: YouBot Allow: /
+User-agent: Amazonbot Allow: /
+
+
+
+
+# Public pages with descriptions
+
+
+– Home — https://www.navina.ai — Overview of Navina's AI copilot for risk adjustment, quality management, and clinician documentation in value-based care.
+
+
+
+
+## Who We Serve
+
+
+– Providers (Physician Groups & Health Systems) — https://www.navina.ai/who-we-serve — How physician groups and health systems use Navina to reduce burnout, close care gaps, and improve coding accuracy at the point of care.
+– ACOs & MSOs — https://www.navina.ai/who-we-serve/#acos-msos — How Accountable Care Organizations and Management Services Organizations use Navina for accurate documentation, proactive care, and audit readiness.
+– Health Plans — https://www.navina.ai/who-we-serve/health-plans — How health plans use Navina to turn payer intelligence into provider action, improving RADV readiness, Stars/HEDIS performance, and network visibility.
+
+
+
+
+## Products
+
+
+– Clinician Copilot — https://www.navina.ai/products/clinician-copilot — AI copilot for 2-minute chart reviews, ambient scribing, real-time HCC insights, and audit-ready documentation.
+– Risk Adjustment — https://www.navina.ai/products/risk-adjustment — AI-powered risk adjustment software that surfaces HCC and RAF insights backed by clinical evidence at the point of care.
+– Quality Management — https://www.navina.ai/products/quality-management — AI-powered care gap management that automates data scrubbing and helps close more care gaps without manual mining.
+– Analytics — https://www.navina.ai/products/analytics — Real-time analytics dashboards to track RAF, HCC breakdown, HEDIS satisfaction, and provider engagement across a network.
+
+
+
+
+## Company
+
+
+– About Us — https://www.navina.ai/about-us — Navina's mission, leadership team, advisory board, and awards/recognition.
+– Core Technology — https://www.navina.ai/core-technology — How Navina's proprietary AI engine reconciles multi-source patient data into clinical insights (data ingestion, document classification, suspected conditions, diagnosis inferencing, care gap insights).
+– Careers — https://www.navina.ai/careers — Open roles and culture information for joining Navina's team.
+– Events — https://www.navina.ai/events — Upcoming and past conferences, virtual events, and webinars where Navina participates.
+– FAQ — https://www.navina.ai/faq — Frequently asked questions about Navina's platform.
+– Request a Demo — https://www.navina.ai/demo — Book a personalized demo of Navina's AI platform.
+– Privacy Policy — https://www.navina.ai/legal/privacy-policy — Navina's data collection, use, sharing, and privacy rights information.
+
+
+
+
+## Resources
+
+
+– Resources Hub — https://www.navina.ai/resources — Index of all Navina resources: articles, webinars, case studies, news, white papers, and videos.
+
+
+
+
+### Articles
+
+
+– Articles Hub — https://www.navina.ai/articles — Index of all Navina articles on AI, risk adjustment, quality management, and value-based care.
+– Turning RADV pressure into risk adjustment strategy — https://www.navina.ai/articles/prospective-risk-adjustment-takeaways-from-our-rise-panel — What prospective risk adjustment means for health plans, provider groups, and audit readiness.
+– Why AI adoption still falls short in clinical workflows — https://www.navina.ai/articles/why-ai-adoption-still-falls-short-in-clinical-workflows — AMGA panel discussion on why AI isn't yet reducing clinicians' workload.
+– 6 insights on the new MA reality for health systems — https://www.navina.ai/articles/6-insights-on-the-new-ma-reality — What it takes to drive Medicare Advantage performance today.
+– Your top questions on LEAD & MA changes — answered — https://www.navina.ai/articles/your-top-questions-on-lead-ma-changes-answered — Answers to strategic questions on CMS's LEAD, MSSP, and Medicare Advantage updates.
+– Healthcare leaders are preparing for what's next in VBC — https://www.navina.ai/articles/taking-the-lead-on-cms-policy-updates-for-vbc-excellence-with-navina — What's ahead as new CMS models arrive.
+– CMS just released the LEAD RFA. Here's why it matters — https://www.navina.ai/articles/cms-just-released-the-lead-rfa-heres-why-it-matters — What clinical infrastructure organizations need to succeed under the LEAD model.
+– Achieving the real ROI of AI — https://www.navina.ai/articles/achieving-the-real-roi-of-ai — Healthcare leaders share what's working as AI use matures.
+– Still charting like it's 2010? What ambient AI changed — https://www.navina.ai/articles/are-you-still-charting-like-its-2010-whats-changed-with-ambient-ai — How ambient AI is transforming clinical documentation.
+– VBC under pressure: Five insights from the front lines — https://www.navina.ai/articles/vbc-under-pressure-five-insights-from-the-front-lines — What changes in value-based care mean for healthcare organizations.
+– How Navina tackles healthcare's biggest inefficiencies — https://www.navina.ai/articles/why-physicians-spend-hours-pre-charting--and-how-navina-solves-it — A resident explains how Navina's AI copilot fixes fragmented pre-charting.
+– Rethinking HEDIS and Stars — https://www.navina.ai/articles/rethinking-hedis-and-stars-building-a-quality-first-culture — Shifting from compliance checklists to a patient-centered quality culture.
+– Why ambient alone isn't enough in clinical care — https://www.navina.ai/articles/beyond-the-hype-why-ambient-alone-isnt-enough-in-clinical-care — Why most AI tools fall short of healthcare organizations' needs.
+– Can AI Help Deliver CMS's Value-Based Care Agenda? — https://www.navina.ai/articles/can-ai-help-deliver-cmss-value-based-care-agenda — A Health Affairs piece by Dr. Michael Barr on VBC's direction and AI's role.
+– Utilization: The Hidden Revenue Leak in VBC — https://www.navina.ai/articles/utilization-the-hidden-revenue-leak-in-vbc — Four principles high-performing groups apply to utilization management.
+– New CMS RADV audits: The good, the bad and the ugly — https://www.navina.ai/articles/new-cms-radv-audits-the-good-the-bad-and-the-ugly — Why the stakes of retrospective risk management are rising.
+– How to ensure compliance & stay prepared for RADV audits — https://www.navina.ai/articles/strategies-to-ensure-compliance-and-stay-prepared-for-radv-audits — Preparation strategies as RADV audits expand to all MA plans.
+– How AI Is cracking the code in value-based care — https://www.navina.ai/articles/how-ai-is-cracking-the-code-in-value-based-care-5-tips-for-healthcare-organizations — 5 tips for health systems pursuing value-based results with AI.
+– 4 keys to embracing AI responsibly — https://www.navina.ai/articles/embracing-ai-responsibly-4-keys-for-healthcare-organizations — Priorities for healthcare organizations adopting AI responsibly.
+– Making prospective risk adjustment work for you — https://www.navina.ai/articles/making-prospective-risk-adjustment-work-for-you — Benefits of prospective risk adjustment done right.
+– Retrospective vs. Prospective Risk Adjustment — https://www.navina.ai/articles/understanding-retrospective-vs-prospective-risk-adjustment — Differences between the two approaches and how prospective HCC coding helps.
+– 5 key takeaways from our VBC initiatives roundtable — https://www.navina.ai/articles/5-key-takeaways-from-our-vbc-initiatives-roundtable — Expert panel on the challenges of value-based care.
+– The New Physician Playbook: AI, Workflows & VBC — https://www.navina.ai/articles/the-new-physician-playbook-ai-workflows-value-based-care-in-action — Lessons learned integrating AI into physician workflows.
+– Navigating the transition to V28: Impact in 2025 — https://www.navina.ai/articles/navigating-the-transition-to-v28-impact-in-2025 — How organizations are adapting to the V28 risk model with AI.
+– Key findings from 2025 independent survey — https://www.navina.ai/articles/phyx-2025-report-key-findings-on-navinas-ai-for-value-based-care — Navina's AI copilot shown to improve VBC outcomes while relieving burnout.
+– Better kidney care with AI — https://www.navina.ai/articles/better-kidney-care-with-ai-evergreen-nephrology — Conversation with Evergreen Nephrology on value-based kidney care.
+– Why our partnership with Goldman Sachs matters — https://www.navina.ai/articles/letter-from-our-ceo-why-our-partnership-with-goldman-sachs-matters — Navina's CEO on the $55M Series C funding round.
+– Securing a competitive edge in value-based care with AI — https://www.navina.ai/articles/securing-a-competitive-edge-in-value-based-care-with-ai — Eight insights from VBC leaders on enhancing performance with AI.
+– 4 key lessons in value-based specialty care — https://www.navina.ai/articles/value-based-specialty-care-4-key-lessons-from-upperline-health — Empowering physician specialists to deliver value-based outcomes.
+– Risk Adjustment Strategies for Payers and Providers — https://www.navina.ai/articles/risk-adjustment-strategies-for-payers-and-providers — Insights into risk adjustment's role in value-based care.
+– 3 strategies to master the shift to value-based care — https://www.navina.ai/articles/mastering-the-shift-to-value-based-care-3-strategies-for-organization-wide-success — Strategies from Navina's VP of Value-Based Care.
+– Essential strategies for value-based success in 2025 — https://www.navina.ai/articles/essential-strategies-for-value-based-success-in-2025 — Takeaways from Navina and AMGA's webinar.
+– Using AI to meet the demands of VBC — https://www.navina.ai/articles/using-ai-to-meet-the-demands-of-vbc-4-key-lessons-from-privia-health — Lessons from Privia Health's use of Navina's AI.
+– Navigating the regulatory curve — https://www.navina.ai/articles/how-payers-and-providers-can-navigate-the-regulatory-curve — Impact of V28 and the Inflation Reduction Act on healthcare organizations.
+– Motivating providers to embrace value-based care — https://www.navina.ai/articles/motivating-providers-to-embrace-value-based-care — Keeping providers motivated in value-based care.
+– The Road to value-based care: Key takeaways — https://www.navina.ai/articles/the-road-to-value-based-care-key-takeaways — Highlights from an expert panel on the future of VBC.
+– Now supporting RxHCC risk adjustment — https://www.navina.ai/articles/now-supporting-rxhcc-risk-adjustment — Why accurate RxHCC coding matters and how Navina supports it.
+– 5 tips to implement AI successfully — https://www.navina.ai/articles/5-tips-to-implement-artificial-intelligence-in-health-care-organizations-successfully — Steps for meaningful AI adoption from Navina's CEO.
+– Physician burnout is not inevitable — https://www.navina.ai/articles/the-risks-of-physician-burnout-are-incalculable-but-not-inevitable — How Navina's AI alleviates cognitive burden and improves care.
+– Preparing for V28 HCC coding changes — https://www.navina.ai/articles/webinar-preparing-for-v28-hcc-coding-changes — Strategies for a smooth V28 transition.
+– Navina's ethical approach to clinical AI — https://www.navina.ai/articles/navinas-ethical-approach-to-clinical-ai — How Navina builds cutting-edge, responsible AI tools.
+– Welcome to the 'new normal' in healthcare — https://www.navina.ai/articles/ai-in-2024-welcome-to-the-new-normal-in-healthcare — Navina's CEO on 2024 healthcare trends.
+– How clinical AI is empowering primary care — https://www.navina.ai/articles/how-ai-is-empowering-primary-care — Navina's CEO on AI reshaping primary care.
+– Embracing AI: A new era for physicians — https://www.navina.ai/articles/embracing-ai-a-new-era-for-physicians — How physicians use AI to manage data overload and personalize medicine.
+– Revolutionizing healthcare with AI - responsibly — https://www.navina.ai/articles/revolutionizing-healthcare-with-ai-responsibly — Panel on ethical, responsible AI integration in healthcare.
+– Winning risk adjustment strategies — https://www.navina.ai/articles/winning-risk-adjustment-strategies-hear-from-the-experts — Expert strategies for risk adjustment and patient care.
+– How AI transforms patient-provider relationships — https://www.navina.ai/articles/how-ai-is-transforming-the-patient-provider-relationship — Navina's CEO on AI revolutionizing the patient-provider relationship.
+– Fox News: AI tool helps doctors read patient data — https://www.navina.ai/articles/fox-news-ai-tool-helps-doctors-make-sense-of-chaotic-patient-data-and-indentify-diseases — Fox News feature on Navina's AI streamlining diagnosis.
+– A word from our founders about our Series B Round — https://www.navina.ai/articles/announcing-our-series-b — Navina's founders on the Series B funding round.
+– Risk adjustment: 5 ways to set your team up for success — https://www.navina.ai/articles/5-ways-to-set-up-your-team-for-success-in-risk-adjustment — Strategies to optimize risk adjustment programs.
+– Forbes | Navina uses AWS to transform patient care — https://www.navina.ai/articles/forbes-ai-startup-navina-leverages-amazon-web-services-to-improve-patient-care — Forbes feature on Navina's AWS-powered platform.
+
+
+
+
+### Webinars
+
+
+– Webinars Hub — https://www.navina.ai/webinars — Index of all Navina live and on-demand webinars.
+– How AI automates audit-ready documentation — https://www.navina.ai/webinars/rise-2026-how-ai-automates-audit-ready-documentation — How leading organizations create documentation that's audit-ready and defensible.
+– Reimagining clinical workflows with AI — https://www.navina.ai/webinars/fragment-to-connected-reimagining-clinical-workflows-with-ai — Turning fragmented patient data into coordinated care.
+– Turning RADV readiness into a prospective risk strategy — https://www.navina.ai/webinars/rise-2026-turning-radv-readiness-into-a-prospective-risk-strategy — Moving risk capture upstream to strengthen audit readiness.
+– Taking the LEAD on CMS policy updates for VBC excellence — https://www.navina.ai/webinars/taking-the-lead-on-cms-policy-updates-for-vbc-excellence — Briefing on CMS policy changes and their impact on VBC strategy.
+– The 2026 Risk Adjustment Engine — https://www.navina.ai/webinars/rise-2026-risk-adjustment-engine — Bridging care delivery, risk capture, and workflow innovation.
+– Achieving the real ROI of AI — https://www.navina.ai/webinars/amga-achieving-the-real-roi-of-ai-optimizing-clinical-financial-and-vbc-success-for-2026 — Optimizing clinical, financial, and VBC success for 2026.
+– VBC 202: Utilization Management & Financial Performance — https://www.navina.ai/webinars/vbc-202-utilization-management-financial-performance — Part 3 of an online course with Out-of-Pocket Health.
+– VBC 202: Deliver Quality Care & Data-Driven Gap Closure — https://www.navina.ai/webinars/vbc-202-delivering-quality-care-data-driven-gap-closure — Part 2 of the VBC 202 course.
+– VBC 202: Intro to VBC and Risk Adjustment — https://www.navina.ai/webinars/vbc-202-intro-to-vbc-and-risk-adjustment — Part 1 of the VBC 202 course.
+– Responsible AI in primary care — https://www.navina.ai/webinars/beckers-and-tytocare-responsible-ai-in-primary-care-driving-quality-trust-and-transformation — Driving quality, trust, and transformation through responsible AI.
+– How top health systems use AI to improve VBC outcomes — https://www.navina.ai/webinars/how-top-health-systems-are-using-ai-to-improve-value-based-care-outcomes — Putting AI to work across clinical, financial, and operational teams.
+– RISE & Navina: How practices are thriving in VBC with AI — https://www.navina.ai/webinars/rise-how-practices-are-thriving-in-vbc-with-ai-phyx-report — Findings on boosting performance without burning out clinicians.
+– Navina & AMGA: The strategic move to prospective coding — https://www.navina.ai/webinars/amga-looking-ahead-in-value-based-care-how-prospective-risk-adjustment-fuels-accuracy-efficiency-and-financial-growth — Adopting prospective coding strategies for accuracy and growth.
+– Winning in HEDIS/Stars — https://www.navina.ai/webinars/winning-in-hedisstars-proactive-strategies-for-medicare-advantage-success — Proactive strategies for Medicare Advantage success.
+– Strategies for plans to engage providers in quality — https://www.navina.ai/webinars/healthcare-engagement-virtual-summit-strategies-for-plans-to-engage-providers-in-quality-management — Virtual summit with TytoCare and Bright Spots in Healthcare.
+– The new physician playbook: AI, workflows & VBC — https://www.navina.ai/webinars/the-new-physician-playbook-ai-workflows-value-based-care-in-action — Using AI to ease physician workloads and drive outcomes.
+– Navina & AMGA: Securing a competitive edge in VBC — https://www.navina.ai/webinars/navina-and-amga-present-securing-a-competitive-edge-in-value-based-care-with-ai — Data-driven strategies for MA, ACO, and Commercial programs.
+– User Webinar - Maximize Workflows & Quality Performance — https://www.navina.ai/webinars/navina-user-webinar-maximize-your-workflow-and-improve-quality-performance — Boosting efficiency and quality performance with Navina's latest features.
+– NPCTS Virtual Summit: Beyond the AI buzz — https://www.navina.ai/webinars/beyond-the-ai-buzz-how-clinicians-can-leverage-ai-for-value-based-success — AI's real impact on physicians, patients, and VBC.
+– Navina & AMGA: Thriving in tomorrow's healthcare — https://www.navina.ai/webinars/navina-and-amga-present-thriving-in-tomorrows-healthcare — Playbook for value-based care success.
+– Navina & athenahealth: AI in practice with Privia Health — https://www.navina.ai/webinars/navina-and-athenahealth-webinar-privia-health-empowers-providers-al — How Privia Health uses AI to streamline workflows and boost VBC.
+– [RISE and Navina webinar] Level up your stars — https://www.navina.ai/webinars/navina-and-rise-webinar-0924-level-up-your-stars — Boosting quality performance and closing care gaps with AI.
+– Navina users webinar: Elevate workflow & transform care — https://www.navina.ai/webinars/navina-user-webinar-elevate-workflow-and-patient-care — Cutting down chart review time and boosting efficiency.
+– Panel: The road to value-based care — https://www.navina.ai/webinars/the-road-to-value-based-care — Current status and future vision of value-based care.
+– The shifting landscape of value-based care — https://www.navina.ai/webinars/rise-navina-present-the-shifting-landscape-of-value-based-care — Navigating change and fostering agility in VBC.
+– RISE & Navina Present: Thriving in the V28 era — https://www.navina.ai/webinars/rise-navina-webinar-thriving-in-the-v28-era — Practical strategies for the V28 transition.
+– Webinar: Navigating the V28 transition — https://www.navina.ai/webinars/webinar-navigating-the-v28-transition — Strategies for risk adjustment and provider engagement during V28.
+– Webinar: Essential innovations in primary care — https://www.navina.ai/webinars/webinar-essential-innovations-in-primary-care — AI's role in addressing burnout and value-based payment complexity.
+– [Webinar] Responsible AI in healthcare — https://www.navina.ai/webinars/webinar-responsible-ai-healthcare — How responsible AI earns clinician trust and enhances workflows.
+– Webinar: Winning risk adjustment strategies — https://www.navina.ai/webinars/webinar-winning-risk-adjustment-strategies — Navigating regulatory changes and maximizing performance.
+– Webinar: Navigating the impact of HCC V28 — https://www.navina.ai/webinars/webinar-navigating-the-impact-of-hcc-v28 — Strategies to navigate the new HCC V28 model.
+– Webinar: Staying ahead in value-based care — https://www.navina.ai/webinars/webinar-stay-ahead-in-value-based-care — Reducing burnout and improving documentation with athenahealth.
+– Webinar: AI for risk-bearing practices — https://www.navina.ai/webinars/webinar-preparing-for-value-based-care — Leveraging AI for risk adjustment and clinician engagement.
+– Webinar: Value-based at scale with AI — https://www.navina.ai/webinars/webinar-value-based-at-scale-using-al — AAFP and Cano Health on scaling operations without sacrificing quality.
+– Webinar: Using AI in the transition to value — https://www.navina.ai/webinars/webinar-using-ai-in-the-transition-to-value — How AI boosts HCC capture and risk scores by 37%.
+– Webinar: From visit prep to value-based outcomes — https://www.navina.ai/webinars/webinar-from-visit-prep-to-value-based-outcomes — AI's role in preventive care identification.
+– Webinar: Advancing care & value-based outcomes with AI — https://www.navina.ai/webinars/webinar-advancing-care-value-based-outcomes-with-ai — Managing change and improving physician satisfaction.
+– Webinar: Winning VBC & risk adjustment strategies — https://www.navina.ai/webinars/webinar-winning-strategies-in-vbc-risk-adjustment — Workflow optimization and team structure tips.
+– AAFP Webinar: AI assistant for clinical review — https://www.navina.ai/webinars/webinar-ai-assistant-for-clinical-review — 70% time saved and higher diagnosis capture with AI assistants.
+– Webinar: Value-based care & risk adjustment — https://www.navina.ai/webinars/webinar-value-based-care-risk-adjustment — Transitioning to value-based care and optimal risk adjustment.
+– Navina & athenahealth webinar: Primary care's future — https://www.navina.ai/webinars/navina-athenahealth-webinar-primary-cares-future — New technologies and payment models for the post-pandemic world.
+– Navina & AAFP webinar: AI's new vision — https://www.navina.ai/webinars/navina-aafp-webinar-ais-new-vision — How Navina turns patient data into intuitive Patient Portraits.
+
+
+
+
+### Case Studies
+
+
+– Case Studies Hub — https://www.navina.ai/case-studies — Index of all Navina customer case studies and success stories.
+– CVFP improves value-based care performance with Navina — https://www.navina.ai/case-studies/how-cvfp-medical-group-improved-its-value-based-care-performance-with-widespread-adoption-of-navina — How an independent practice deployed Navina to support clinicians.
+– Privia Health boosts value-based success with Navina — https://www.navina.ai/case-studies/privia-health-accelerates-value-based-success-with-navina — Accelerating value-based success and fighting physician burden.
+– Primus Health scales VBC, boosts physician satisfaction — https://www.navina.ai/case-studies/primus-health-network-scales-value-based-care-performance-and-boosts-physician-satisfaction-with-navinas-ai — A Florida provider group's VBC scaling with Navina's AI.
+– How Navina boosts quality performance — https://www.navina.ai/case-studies/navina-boosts-quality-performance-for-risk-bearing-provider-organization — A 12% boost in quality metrics for a multi-state provider.
+– Navina's AI drives success for Upperline Health — https://www.navina.ai/case-studies/navinas-ai-powered-value-based-care-platform-drives-success-for-upperline-health — 97% clinician adoption and 41% more conditions surfaced.
+– Case study: Navina AI boosts ACO outcomes — https://www.navina.ai/case-studies/navina-ai-boosts-aco-outcomes — Improved diagnosis accuracy and RAF scores for a top-performing ACO.
+– Navina helps advanced multi-state care group — https://www.navina.ai/case-studies/navina-helps-advanced-multi-state-care-group — Improved care quality and physician satisfaction.
+– Case study: AI-enhanced outcomes — https://www.navina.ai/case-studies/ai-enhanced-outcomes — Enhanced diagnosis accuracy and provider satisfaction in a multi-specialty group.
+– Case study: Leading ACO and Navina — https://www.navina.ai/case-studies/navina-lifts-revenue-by-millions-for-multi-specialty-group-and-aco — Reduced burnout and boosted revenue for a growing ACO.
+
+
+
+
+### News
+
+
+– News Hub — https://www.navina.ai/news — Index of all Navina company announcements and media coverage.
+– Bruce Broussard joins Navina advisory board — https://www.navina.ai/news/bruce-broussard-joins-navina-advisory-board — Former Humana CEO joins Navina's advisory board.
+– Navina Wins 2nd Consecutive Gold Stevie® 2026 — https://www.navina.ai/news/navina-wins-gold-stevie-award-for-ai-in-healthcare-at-the-2026-american-business-awards — Back-to-back Gold Stevie Awards for AI in Healthcare.
+– Navina and Summit Health: Clinical intelligence at scale — https://www.navina.ai/news/navina-and-summit-health-partner-to-deliver-ai-powered-clinical-intelligence-at-scale — Partnership bringing workflow-native AI to Summit Health.
+– Ambient-only scribing misses critical patient context — https://www.navina.ai/news/new-research-finds-ambient-only-clinical-documentation-misses-critical-patient-context — Study on documentation completeness with ambient scribing plus history.
+– Nabla and Navina: Ambient AI and clinical intelligence — https://www.navina.ai/news/nabla-and-navina-announce-strategic-partnership-to-supercharge-clinician-workflows-with-clinical-intelligence-and-ambient-ai — Partnership to close care gaps and improve documentation.
+– Powering value-based success with Navina and ABW Medical — https://www.navina.ai/news/closing-the-loop-powering-value-based-success-with-navina-and-abw-medical — Friction-free loop from diagnosis to reimbursement.
+– Navina's double win — https://www.navina.ai/news/navinas-ai-copilot-wins-gold-stevie-award-and-medtech-breakthrough-award — Gold Stevie Award and MedTech Breakthrough Award wins.
+– Navina secures $55M Series C led by Goldman Sachs — https://www.navina.ai/news/navina-secures-55m-series-c-funding-led-by-growth-equity-at-goldman-sachs-alternatives — Funding to advance Navina's AI-powered clinical intelligence platform.
+– Navina's AI copilot ranks #1 in 2025 Best in KLAS — https://www.navina.ai/news/navinas-ai-copilot-ranks-1-in-2025-best-in-klas — #1 ranking in Clinician Digital Workflow category.
+– Navina partners with agilon to improve patient care — https://www.navina.ai/news/navina-partners-with-agilon-health-to-improve-patient-care — Strategic partnership aimed at AI-powered patient care.
+– Navina partners with FLAACOs to enhance care in Florida — https://www.navina.ai/news/navina-expands-florida-footprint-with-flaacos-partnership — Equipping Florida ACOs with AI-driven tools.
+– Navina named Top 20 Emerging Solutions by KLAS Research — https://www.navina.ai/news/klas-research-navina-named-top-20-emerging-solution — Top 5 ranking for outcomes and clinician experience.
+– Navina quality platform boosts performance by up to 24% — https://www.navina.ai/news/navina-quality-platform-boosts-performance-by-up-to-24 — First-of-its-kind innovation closing critical care gaps.
+– Navina wins Best Overall Health Informatics Solution — https://www.navina.ai/news/navina-wins-medtech-best-overall-informatics-solution — 2024 MedTech Breakthrough Award win.
+– Navina achieves fourth ISO 27001 certification — https://www.navina.ai/news/navina-achieves-iso-27001-certification-again — Commitment to highest data security standards.
+– Successful SOC 2 Type II + HIPAA audit — https://www.navina.ai/news/successful-soc-2-type-ii-hipaa-audit — Compliance with AICPA data protection standards.
+– Navina's AI now integrated with Epic — https://www.navina.ai/news/navina-ai-now-integrated-with-epic — NOMS Healthcare first to use Navina's AI within Epic.
+– AAFP study: Navina's AI reduces physician burnout — https://www.navina.ai/news/aafp-study-navina-ai-reduces-burnout — 23% burnout reduction, 49% diagnosis accuracy boost.
+– Navina on 2023 CB Insights' Digital Health 50 list — https://www.navina.ai/news/navina-on-2023-cb-insights-digital-health-50-list — Recognition among top 50 Digital Health companies.
+– Navina and Privia Health join forces — https://www.navina.ai/news/navina-privia-health-partnership — Partnership to empower physicians with AI technology.
+– KLAS Research Emerging Solutions Spotlight — https://www.navina.ai/news/klas-research-emerging-solutions-spotlight — Spotlight based on interviews with Navina customers.
+– New AI assistant for primary care unveiled — https://www.navina.ai/news/new-ai-assistant-for-primary-care-unveiled — Navina's new AI assistant for primary care providers.
+– Navina named to 2023 CB Insights AI 100 — https://www.navina.ai/news/navina-named-to-2023-cb-insights-ai-100 — Recognition among most innovative AI companies.
+– TGH partners with Navina for advanced primary care — https://www.navina.ai/news/tgh-partners-with-navina-ai-for-advanced-primary-care — Tampa General Hospital adopts Navina's AI.
+– CVFP Medical Group expands partnership with Navina — https://www.navina.ai/news/cvfp-medical-group-expands-partnership-with-navina — Expanded deployment to more clinicians.
+– Announcing Series B funding: $22 million milestone — https://www.navina.ai/news/announcing-series-b-funding-22-million-milestone — $22M Series B to revolutionize primary care with AI.
+– Navina secures $15M Series A to advance AI technology — https://www.navina.ai/news/navina-secures-15m-series-a-to-advance-ai-technology — Series A funding from Vertex Ventures Israel and others.
+– Results with NOMS Healthcare after three months — https://www.navina.ai/news/results-with-noms-healthcare-after-three-months — Improved HCC-RAF scores and reduced burnout across 21 practices.
+– Douglas E. Henley joins Navina's medical advisory board — https://www.navina.ai/news/douglas-e-henley-joins-navina-medical-advisory-board — Former AAFP CEO joins Navina's Advisory Board.
+
+
+
+
+### White Papers
+
+
+– White Papers Hub — https://www.navina.ai/white-papers — Index of all Navina white papers and research reports.
+– From REACH to LEAD or MSSP: Choosing your path for 2027 — https://www.navina.ai/white-papers/lead-decision-guide-2026 — Decision guide comparing LEAD and MSSP for REACH ACOs.
+– Phyx 2025 survey report on Navina — https://www.navina.ai/white-papers/phyx-2025-independent-study-on-navina — Key findings from an independent study of Navina's AI copilot.
+– 10 essential risk adjustment tips for 2025 — https://www.navina.ai/white-papers/2025-risk-adjustment-tip-sheet — Handy tip sheet for risk adjustment success.
+– Guide: Making the case for AI — https://www.navina.ai/white-papers/making-the-case-for-ai-ensuring-organizational-buy-in — Guide to securing leadership buy-in for AI adoption.
+– Under the hood of Navina's AI — https://www.navina.ai/white-papers/under-the-hood-of-navinas-ai — Deep-dive into Navina's AI engine.
+– Innovative approaches to Medicare Stars success — https://www.navina.ai/white-papers/innovative-approaches-to-medicare-stars-success-integrating-ai-for-superior-performance — How AI can improve Medicare Stars ratings.
+– Multi-Source Data Reconciliation for Risk Adjustment — https://www.navina.ai/white-papers/precision-in-practice-multi-source-data-reconciliation-for-risk-adjustment — Turning fragmented data into a single source of truth.
+– The impact of changes to IRA prescription drug benefits — https://www.navina.ai/white-papers/inflation-reduction-act-prescription-drug-benefit-changes-impact-on-plans-and-providers — Impact of IRA drug benefit changes on risk adjustment.
+– 5 tips for successful AI implementation in healthcare — https://www.navina.ai/white-papers/5-tips-for-successful-ai-implementation-in-healthcare — Guide to implementing AI at healthcare organizations.
+– AAFP's independent study on Navina — https://www.navina.ai/white-papers/aafp-phase-2-independent-study-on-navina — Reduced chart review burden and burnout findings.
+– AI-powered insights from imaging documents — https://www.navina.ai/white-papers/ai-powered-insights-from-imaging-documents — How AI transforms imaging data into actionable insights.
+– From chaos to clarity — https://www.navina.ai/white-papers/whitepaper-from-chaos-to-clarity — Documentation challenges physicians face and how AI helps.
+– Risk adjustment strategies: 10-step checklist — https://www.navina.ai/white-papers/risk-adjustment-strategies-10-step-checklist — A 10-step checklist for risk adjustment success.
+– The impact of HCC V28 on medical groups — https://www.navina.ai/white-papers/impact-of-hcc-v28-on-medical-groups — Strategies for transitioning from V24 to V28.
+– AAFP Innovation Lab report: Evaluating Navina — https://www.navina.ai/white-papers/aafp-innovation-lab-report-evaluating-navina — Findings on reducing burden and improving VBC outcomes.
+
+
+
+
+### Videos
+
+
+– Videos Hub — https://www.navina.ai/videos — Index of all Navina videos: expert interviews, testimonials, and event sessions.
+– What successful clinical AI looks like — https://www.navina.ai/videos/what-successful-clinical-ai-looks-like — Healthcare leaders on succeeding when deploying an AI solution.
+– How physicians are improving care and coding with Navina — https://www.navina.ai/videos/how-physicians-are-improving-care-and-coding-with-navina — Customers on AI's impact at their organizations.
+– Reimagining clinical workflows with AI (AMGA 2026) — https://www.navina.ai/videos/amga-2026-breakout-session — How AI turns data into insight and clinician-friendly action.
+– How Navina aligns teams — https://www.navina.ai/videos/how-navina-aligns-teams-around-the-right-data-at-the-right-time — Strategies to reduce administrative burden and drive engagement.
+– Testimonial: Summit Medical Group — https://www.navina.ai/videos/summit-medical-group-testimonial — Dr. Bhavana Vora on physician adoption of Navina.
+– How Navina powers customer success — https://www.navina.ai/videos/how-navina-powers-customer-success — Implementation, training, and scaling with Navina.
+– Testimonial: Ogden Clinic empowers providers with AI — https://www.navina.ai/videos/ogden-clinic-testimonial — Ogden Clinic's search for a RAF-capturing solution.
+– Testimonial: Central Virginia Family Practice — https://www.navina.ai/videos/cvfp-testimonial — Dr. Jared Dodd on streamlining daily practice with Navina.
+– Testimonial: Upperline Health — https://www.navina.ai/videos/upperline-health-testimonial — Why physicians love Navina's AI at Upperline Health.
+– Testimonial: Privia Health — https://www.navina.ai/videos/privia-health-testimonial — Dr. Eric South on transforming clinical workflows for VBC.
+– Healthier patients, healthier economics (AMGA 2025) — https://www.navina.ai/videos/amga-2025-breakout-session — A masterclass in driving VBC outcomes with AI.
+– Kidney Month Spotlight: Evergreen Nephrology — https://www.navina.ai/videos/kidney-month-spotlight-evergreen-nephrology — Value-based kidney care through coordinated models and AI.
+– Transforming value-based specialty care with AI — https://www.navina.ai/videos/transforming-value-based-specialty-care-with-ai----vive-2025-fireside-chat — Fireside chat featuring Upperline Health's CMO.
+– Testimonial: Jefferson City Medical Group — https://www.navina.ai/videos/jcmg-testimonial — How JCMG saves hours on chart reviews and improves outcomes.
+
+
+
+
+
+
+
+
+Sitemap: https://www.navina.ai/sitemap.xml
