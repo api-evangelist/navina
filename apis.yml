@@ -13,6 +13,17 @@ description: 'Navina is a healthcare AI company whose clinician-facing copilot s
   machine-readable contract is published, and the api.navina.ai host is a fully
   authenticated backend.'
 url: https://raw.githubusercontent.com/api-evangelist/navina/refs/heads/main/apis.yml
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 image: https://cdn.prod.website-files.com/65df77bb47a7104730575520/65df7e15c4b06e32101057f8_navina_webclip.png
 x-type: company
 x-source: harvest:secondary-market
