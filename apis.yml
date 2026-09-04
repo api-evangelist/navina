@@ -24,6 +24,18 @@ deliveryModel:
   - pricing
   generated: '2026-08-28'
   method: derived
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source:
+  - security
+  generated: '2026-09-02'
+  method: derived
 image: https://cdn.prod.website-files.com/65df77bb47a7104730575520/65df7e15c4b06e32101057f8_navina_webclip.png
 x-type: company
 x-source: harvest:secondary-market
