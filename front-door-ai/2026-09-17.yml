@@ -1,0 +1,26 @@
+# Front Door AI Index — navina — 2026-09-17
+# AI vocabulary counted on the provider's root page. Generated; do not edit.
+# `score` is null unless ownership is `own` — see front_door_ai.py.
+front_door_ai:
+  slug: navina
+  lexicon_version: '1.0'
+  probed_at: '2026-09-17'
+  host: www.navina.ai
+  final_host: www.navina.ai
+  ownership: own
+  owner: navina
+  shares_host_with: null
+  inherited_from: null
+  verdict: scored
+  score: 20
+  host_score: 20
+  density: 15.84
+  words: 1263
+  tiers:
+    agentic: 6
+    core: 14
+    model: 0
+  ambiguous: 0
+  top_terms:
+    AI: 14
+    copilot: 6
