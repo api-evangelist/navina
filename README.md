@@ -64,40 +64,93 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Navina is a healthcare AI company whose clinician-facing copilot supports value-based care.
-It ingests data from electronic health records, health information exchanges, insurance claims
-and care-gap files, then reconciles it into a single "Patient Portrait" that surfaces
-risk-adjustment (HCC/RAF) insights, quality and care-gap management, ambient clinical
-documentation and network analytics at the point of care. Navina is sold to physician groups,
-health systems, ACOs/MSOs and health plans.
+Navina is a healthcare AI company whose clinician-facing copilot supports value-based care. It ingests data from electronic health records, health information exchanges, insurance claims and care-gap files, then reconciles it into a single "Patient Portrait" that surfaces risk-adjustment (HCC/RAF) insights, quality and care-gap management, ambient clinical documentation and network analytics at the point of care. Navina is delivered as an EHR-embedded application — integrated with Epic, Veradigm/Altera, athenahealth, eClinicalWorks and Cerner via HL7 v2/v3, FHIR and SMART on FHIR/OAuth2 — and is sold to physician groups, health systems, ACOs/MSOs and health plans. It is a consumer of EHR interoperability APIs rather than a publisher of a public developer API: no developer portal, documentation, API reference or machine-readable contract is published, and the api.navina.ai host is a fully authenticated backend.
 
-- Website: https://www.navina.ai/
-- Status: https://status.navina.ai/
-- Trust Center: https://trust.navina.ai/
-- GitHub: https://github.com/Navina-ai
+**Areas:** Company · Healthcare · Artificial Intelligence · Clinical Decision Support · Value-Based Care · Risk Adjustment · Electronic Health Records · FHIR · Interoperability · Medical Coding
 
-## API surface
+## Navina on APIs.io
 
-**Navina publishes no public API.** It is a consumer of EHR interoperability APIs rather than a
-publisher of one: the product is delivered as an EHR-embedded application integrated with Epic,
-Veradigm/Altera, athenahealth, eClinicalWorks and Cerner over HL7 v2/v3, FHIR and SMART on
-FHIR/OAuth2. There is no developer portal, documentation, API reference, SDK, or machine-readable
-contract on any Navina host. `api.navina.ai` resolves to an AWS API Gateway that answers every
-path with HTTP 403 `{"message":"Missing Authentication Token"}`, and `docs.navina.ai` is a private
-S3 bucket returning HTTP 403 `AccessDenied`.
+Everything profiled for Navina is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/navina/](https://apis.io/providers/navina/)** — or go straight to one of the APIs or properties below.
 
-What Navina *does* publish, and what this profile captured:
+### Published properties
 
-| Artifact | What was found |
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (3)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Navina Domain Security](https://apis.io/security/navina/navina-domain-security/)
+- [Navina Trust Center](https://apis.io/security/navina/navina-trust-center/)
+- [Navina Vulnerability Disclosure](https://apis.io/security/navina/navina-vulnerability-disclosure/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Navina Plans Pricing](https://apis.io/plans/navina/navina-plans-pricing/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.navina.ai/)
+- [Blog](https://www.navina.ai/articles)
+- [Trust centre](https://trust.navina.ai/)
+- [Terms of service](https://www.navina.ai/legal/general-terms-conditions)
+- [Privacy policy](https://www.navina.ai/legal/privacy-policy)
+- [GitHub](https://github.com/Navina-ai)
+- [Status](https://status.navina.ai/)
+
+## API Evangelist rating
+
+**Kin Score 19.6** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
 |---|---|
-| `llms/navina-llms.txt` | A real, provider-authored `llms.txt` (36 KB, last updated 2026-08-04) served at https://www.navina.ai/llms.txt |
-| `conformance/` | ISO/IEC 27001:2022 (4th consecutive year), SOC 2 Type II, HIPAA — each from Navina's own dated announcement |
-| `security/navina-trust-center.yml` | Public trust center at trust.navina.ai, powered by Anecdotes |
-| `security/navina-domain-security.yml` | TLS 1.3, HSTS (max-age 31536000), SPF and DMARC (`p=quarantine`) present; DNSSEC and CAA absent |
-| `lifecycle/` | UptimeRobot-hosted status page; no deprecation policy, versioning scheme or changelog |
-| `plans/` | No published pricing at all — `/pricing` returns 404; enterprise contact-sales only |
-| `well-known/` | Every `/.well-known/` path probed on five hosts missed |
+| Discoverability | 55.4 |
+| Contract quality | 0.0 |
+| Contract governance | 18.2 |
+| Operational transparency | 18.4 |
+| Developer ergonomics | 7.1 |
+| Access clarity | 35.5 |
 
-No OpenAPI, AsyncAPI, GraphQL SDL, MCP server, A2A agent card, SDK or Postman collection exists to
-capture. The `Navina-ai` GitHub organization holds 14 public repositories, 13 of which are forks of
-third-party projects; none is a client library for a Navina API.
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 18.4** — Health
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/navina/](https://apis.io/providers/navina/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Navina: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/navina/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
